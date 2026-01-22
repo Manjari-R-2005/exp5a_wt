@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brands – BEAUTY LUXE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://thumbs.dreamstime.com/b/set-cosmetics-brushes-jewellery-fresh-flowers-purple-background-presents-summer-sale-shopping-118276923.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.container, .site-title {
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+    .site-title {
+      background: linear-gradient(to right, #d63384, #6610f2);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .site-title h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .site-title p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    .category-section {
+      margin: 50px 0;
+    }
+
+    .category-title {
+      font-size: 1.8rem;
+      color: #d63384;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .product-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    
+    .product-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product-scroll {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;     
+    }
+
+    .product-card {
+      flex: 0 0 auto;
+      width: 250px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product-card h6 {
+      font-size: 1.1rem;
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      margin: 0;
+      color: #888;
+    }
+
+    @media (max-width: 576px) {
+  .product-card {
+    width: 180px;
+    padding: 10px;
+  }
+  .product-card h6 {
+    font-size: 0.9rem;
+  }
+}
+
+    .add-to-cart {
+      margin-top: 10px;
+      background: #d63384;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      width: 100%;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .add-to-cart:hover {
+      background: #a61c6d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="site-title">
+    <h1>BEAUTY LUXE</h1>
+    <p>Your Luxury Beauty Destination</p>
+  </div>
+
+  <div class="container">
+
+    
+    <div class="category-section">
+      <h2 class="category-title">Makeup</h2>
+      <div class="product-scroll">
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/a/7ac6ecf773602642878_1.jpg" alt="MAC Foundation">
+          <h6>M.A.C Studio Fix Fluid SPF 15 Soft Matte Foundation</h6>
+          <p>₹2,499</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/8/782409a3600522851288_1.jpg" alt="L'Oréal Lipstick">
+          <h6>L'Oreal Paris Color Riche Satin Lipstick</h6>
+          <p>₹799</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTeIi6lAZAPAzp6AQH1x8g0HSAYpu9_Ieq9w&s" alt="L'Oréal Lipstick">
+          <h6>Nykaa Black Waterproof & Smudgeproof Mascara </h6>
+          <p>₹349</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/3/8/38e661aKAYBE00000850_12.jpg?tr=w-500" alt="L'Oréal Lipstick">
+          <h6>Kay Beauty Velvet Creme Multi-Use Blush </h6>
+          <p>₹384</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/a/3/a398c60MAYBE00000020-newadd_2.jpg?tr=w-500" alt="L'Oréal Lipstick">
+          <h6>Maybelline New York Oil Control Compact Powderk</h6>
+          <p>₹605</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/c/f/cf4c8228904052400875_001.jpg?tr=w-500" alt="L'Oréal Lipstick">
+          <h6>COLORBAR Perfect Match Beauty Balm - 29gm</h6>
+          <p>₹657</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/d/f/df3e0a5NYSWISSB00122_1.jpg" alt="L'Oréal Lipstick">
+          <h6>Swiss Beauty Long Lasting Makeup Fixer</h6>
+          <p>₹239</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <div class="category-section">
+      <h2 class="category-title">Skincare</h2>
+      <div class="product-scroll">
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/8/185023f192333042809_1.jpg" alt="Clinique Moisturizer">
+          <h6>Clinique Moisture Surge Intense</h6>
+          <p>₹2,199</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/9/394e9c5MINIM00000001_a.jpg" alt="Niacinamide Serum">
+          <h6>Minimalist 10% Niacinamide Face Serum </h6>
+          <p>₹599</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/3/8369911767332800011_1.jpg" alt="Niacinamide Serum">
+          <h6>Murad Retinol Youth Renewal Night Cream</h6>
+          <p>₹6,640</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/1/a171d0bDOTKE00000200_1.jpg" alt="Niacinamide Serum">
+          <h6>Dot & Key Barrier Gentle Face Wash</h6>
+          <p>₹214</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/0/90cd0d8N_4005808622375_1B.jpg" alt="Niacinamide Serum">
+          <h6>NIVEA Tinted Lip Balm With Natural Oils</h6>
+          <p>₹169</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/8/8806194004334_1.jpg" alt="Niacinamide Serum">
+          <h6>TONYMOLY Pureness 100 Mask Sheet</h6>
+          <p>₹100</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/e/1e4daabFOXTA00000003_1.jpg" alt="Niacinamide Serum">
+          <h6>Foxtale Hydrating Cleanser And Make-Up Remover</h6>
+          <p>₹262</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="category-section">
+      <h2 class="category-title">Haircare</h2>
+      <div class="product-scroll">
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/7/a7f9cef290011521011_1711231.jpg" alt="Moroccanoil Treatment">
+          <h6>Moroccanoil Treatment Original Argan Oil Serum</h6>
+          <p>₹3,000</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/5/35f0eef1920091751_1.jpg" alt="OGX Shampoo">
+          <h6>OGX Strength & Length Keratin Oil Shampoo</h6>
+          <p>₹650</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/0/00c0d1eNATHA00000055_1.jpg" alt="OGX Shampoo">
+          <h6>Nat Habit Oil Treated Handmade Wooden Comb</h6>
+          <p>₹385</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/a/4ab90b5BARAD00000033_1.jpg" alt="OGX Shampoo">
+          <h6>Bare Anatomy Heat Protection Hair Spray</h6>
+          <p>₹439</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/a/4ab90b5BARAD00000031_1.jpg" alt="OGX Shampoo">
+          <h6>Bare Anatomy Anti-Dandruff Hair Mask </h6>
+          <p>₹475</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/d/eddc22f9636400260_1.jpg" alt="OGX Shampoo">
+          <h6>Olaplex No. 6 Smoother Styling Hair Cream</h6>
+          <p>₹2,763</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/0/a0519c58904086325076_0.jpg" alt="OGX Shampoo">
+          <h6>VEGA Professional Pro 4-in-1 Deep Waver</h6>
+          <p>₹5,250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="category-section">
+      <h2 class="category-title">Fragrance</h2>
+      <div class="product-scroll">
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/b/db992ab3348901250146.jpg" alt="Dior Perfume">
+          <h6>DIOR Sauvage Eau De Toilette For Him</h6>
+          <p>₹7,500</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/e/2ec8a1565107400000_1.jpg" alt="CK One">
+          <h6>Calvin Klein CK One For Women & Men</h6>
+          <p>₹4,200</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/4/0456bdaSOLDE00000045_Image1.jpg" alt="CK One">
+          <h6>Sol de Janeiro Cheirosa 62 Perfume </h6>
+          <p>₹3,400</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/e/6e95cfd085715320261_1.jpg" alt="CK One">
+          <h6>GUESS Seductive Noir Body Mist For Her</h6>
+          <p>₹945</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/7/e71bad5SOLDE00000252.jpg" alt="CK One">
+          <h6>Sol de Janeiro Rio Deo Cheirosa 40 Deodorant </h6>
+          <p>₹1,275</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/c/2ccad0b667559303923_1.jpg" alt="CK One">
+          <h6>Bath & Body Works Into The Night 3-Wick Candle</h6>
+          <p>₹1,999</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/e/1e6607aBELAB00000048_1.jpg" alt="CK One">
+          <h6>Bella Vita Luxury Perfumes Gift Set For Women</h6>
+          <p>₹549</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="category-section">
+      <h2 class="category-title">Nails</h2>
+      <div class="product-scroll">
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/a/barefoot-in-barcelona-nle41-nail-lacquer-22001014027.jpg" alt="OPI Nail Polish">
+          <h6>OPI Glitery Smooth Nail Polish</h6>
+          <p>₹499</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/7/870ad368904052452874_1.jpg" alt="Colorbar Gel Polish">
+          <h6>Colorbar Gel Polish Longstay</h6>
+          <p>₹399</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/2/52608ac8904470818016_1.jpg" alt="Colorbar Gel Polish">
+          <h6>Shills Professional Reusable Press On Nails </h6>
+          <p>₹159</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/b/2b195ddOPIXX00000079_Main.jpg" alt="Colorbar Gel Polish">
+          <h6>O.P.I Nature Strong Nail Paint Top Coat</h6>
+          <p>₹656</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/3/b3645ea8904355917933_1.jpg" alt="Colorbar Gel Polish">
+          <h6>Sanfe Instant Stick On Reusable Artificial Nails</h6>
+          <p>₹287</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/9/69aa7f88904245702465_1.jpg" alt="Colorbar Gel Polish">
+          <h6>Nykaa Cosmetics Nail Enamel - Base BFF 373</h6>
+          <p>₹95</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/f/b/fb685568904245704841_1.jpg" alt="Colorbar Gel Polish">
+          <h6>Nykaa Cosmetics Nail Care Range</h6>
+          <p>₹154</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  
+    <script>
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Product added to cart!');
+    });
+  });
+</script>
+  </script>
+
+</body>
+</html>
